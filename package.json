@@ -1,0 +1,17 @@
+{
+  "name": "gabose-trucking",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Damjan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch scss:css --style=expanded --source-map",
+    "build": "sass scss:css --style=compressed --no-source-map"
+  },
+  "dependencies": {
+    "sass": "^1.90.0"
+  }
+}
