@@ -1259,16 +1259,16 @@
   }
 }
 /*-- -------------------------- -->
-<---          Contact           -->
+<---          Application       -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #contact {
+  #application {
     padding: var(--sectionPadding);
     overflow: hidden;
     position: relative;
   }
-  #contact .container {
+  #application .container {
     width: 100%;
     max-width: 59rem;
     margin: auto;
@@ -1277,17 +1277,17 @@
     align-items: center;
     gap: 2.5rem;
   }
-  #contact .content {
+  #application .content {
     text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #contact .cs-text {
+  #application .cs-text {
     max-width: none;
   }
-  #contact .application-form {
+  #application .application-form {
     width: 100%;
     /* 464px - 846px */
     max-width: clamp(29rem, 59vw, 52.875rem);
@@ -1295,7 +1295,7 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 0.75rem;
   }
-  #contact .label {
+  #application .label {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.5em;
@@ -1307,7 +1307,7 @@
     grid-column: span 12;
     gap: 0.5rem;
   }
-  #contact .input {
+  #application .input {
     font-family: inherit;
     font-size: 1rem;
     width: 100%;
@@ -1320,23 +1320,23 @@
     border: none;
     border-radius: 0.5rem;
   }
-  #contact .select-input,
-  #contact .date-input {
+  #application .select-input,
+  #application .date-input {
     /* as the select arrow/date calendar icon are not affected by padding, we can use a transparent border on the select element to pad the arrow as much as we need */
     border-right: 1.5rem solid rgba(0, 0, 0, 0);
   }
-  #contact .textarea {
+  #application .textarea {
     height: 7.5rem;
     margin-bottom: 2rem;
     padding-top: 1rem;
   }
-  #contact .wrapper {
+  #application .wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     grid-column: span 12;
   }
-  #contact .cs-button-solid {
+  #application .cs-button-solid {
     font-size: 1rem;
     font-weight: 700;
     /* 46px - 56px */
@@ -1355,7 +1355,7 @@
     position: relative;
     z-index: 1;
   }
-  #contact .cs-button-solid:before {
+  #application .cs-button-solid:before {
     content: "";
     width: 0%;
     height: 100%;
@@ -1367,23 +1367,23 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #contact .cs-button-solid:hover:before {
+  #application .cs-button-solid:hover:before {
     width: 100%;
   }
-  #contact .cs-submit {
+  #application .cs-submit {
     border: none;
   }
-  #contact .cs-submit:hover {
+  #application .cs-submit:hover {
     cursor: pointer;
   }
-  #contact .cs-graphic {
+  #application .cs-graphic {
     display: none;
     position: absolute;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #contact .cs-split {
+  #application .cs-split {
     grid-column: span 6;
   }
 }
