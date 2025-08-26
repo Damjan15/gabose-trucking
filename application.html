@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Gabose Trucking</title>
+</head>
+
+<body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+    <header id="navigation">
+        <div class="container">
+            <!--Nav Logo-->
+            <a href="#" class="logo" aria-label="back to home">
+                <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Flogo-black.svg" alt="logo" width="210"
+                    height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="toggle" aria-label="mobile menu toggle">
+                    <div class="box" aria-hidden="true">
+                        <span class="line line1" aria-hidden="true"></span>
+                        <span class="line line2" aria-hidden="true"></span>
+                        <span class="line line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+
+                <div class="nav-wrapper">
+                    <ul id="expanded" class="nav-list" aria-expanded="false">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Driver Application
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="" class="cs-button-solid cs-nav-button">Request a Quote</a>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+    <div id="banner">
+        <div class="container">
+            <span class="banner-title">Driver Application</span>
+            <div class="banner-breadcrumbs">
+                <a href="#" class="banner-link">Home</a>
+                <a href="#" class="banner-link active">Driver Application</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="banner-background">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Banners/library-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Banners/library.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Banners/library.jpg" alt="library" width="1920"
+                height="375">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                   Contact                    -->
+    <!-- ============================================ -->
+    <section id="contact">
+        <div class="container">
+            <div class="content">
+                <span class="cs-topper">Application Form</span>
+                <h2 class="cs-title">Apply to Work with Us</h2>
+                <p class="cs-text">Orci eu lobortis elementum nibh tellus. Vulputate eu scelerisque felis imperdiet
+                    proin fermentum leo vel. Luctus accumsan tortor posuere ac ut consequat semper. Et pharetra pharetra
+                    massa massa ultricies mi quis.</p>
+            </div>
+            <!--Form-->
+            <form class="application-form" id="application-form" name="Contact Form" method="post">
+                <label class="label cs-split">
+                    First Name *
+                    <input class="input" required type="text" id="first-name-2061" name="First Name">
+                </label>
+                <label class="label cs-split">
+                    Last Name *
+                    <input class="input" required type="text" id="last-name-2061" name="Last Name">
+                </label>
+                <label class="label cs-split">
+                    Email *
+                    <input class="input" required type="email" id="email-2061" name="Email">
+                </label>
+                <label class="label cs-split">
+                    Phone Number *
+                    <input class="input" required type="tel" id="phone-2061" name="Phone Number">
+                </label>
+                <label class="label">
+                    Choose a position *
+                    <select class="input select-input" required id="position-2061" name="Position">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="Server">Server</option>
+                        <option value="Chef">Chef</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+                <label class="label">
+                    When can you start? *
+                    <input class="input date-input" required type="date" id="start-date-2061" name="Start Date">
+                </label>
+                <label class="label">
+                    What is your availability for an interview?
+                    <input class="input" type="text" id="interview-availability-2061" name="Interview Availability">
+                </label>
+                <label class="label cs-split">
+                    Expected pay range
+                    <input class="input" type="text" id="pay-range-2061" name="Pay Range">
+                </label>
+                <label class="label cs-split">
+                    Years experience
+                    <input class="input" type="text" id="years-experience-2061" name="Years Experience">
+                </label>
+                <label class="label">
+                    Tell us about any experience you have in your position
+                    <textarea class="input textarea" id="previous-experience-2061" name="Previous Experience"
+                        placeholder="Tell us about your previous experience..."></textarea>
+                </label>
+                <div class="wrapper">
+                    <button class="cs-button-solid cs-submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                  Footer                      -->
+    <!-- ============================================ -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a aria-label="go back to home" class="logo" href="">
+                    <img class="logo-img" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/agency-logo.svg" alt="logo" width="209"
+                        height="40">
+                </a>
+                <ul class="footer-ul">
+                    <li class="footer-li">
+                        <a href="" class="footer-link">Home</a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="" class="footer-link">About Us</a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="" class="footer-link">Services</a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="" class="footer-link">Driver Application</a>
+                    </li>
+                    <li class="footer-li">
+                        <a href="" class="footer-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <!--Social-->
+                <ul class="footer-social">
+                    <li class="footer-social-li">
+                        <a href="" class="footer-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                            <img class="footer-social-icon cs-default"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg" alt="icon"
+                                loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="footer-social-li">
+                        <a href="#" class="footer-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                            <img class="footer-social-icon cs-default"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg" alt="icon"
+                                loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="footer-social-li">
+                        <a href="#" class="footer-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                            <img class="footer-social-icon cs-default"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg" alt="icon"
+                                loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="footer-social-li">
+                        <a href="#" class="footer-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                            <img class="footer-social-icon cs-default"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-ba.svg" alt="icon"
+                                loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                </ul>
+                <span class="cs-copyright">
+                    © Copyright 2025 Gabose Trucking LLC. All rights reserved. - <a href=""
+                        class="cs-copyright-link">Freightline Digital</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
