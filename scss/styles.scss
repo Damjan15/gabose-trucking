@@ -6,8 +6,8 @@
 @use "sections/choose";
 @use "sections/cta";
 @use "sections/footer";
-@use "sections/application/banner";
-@use "sections/application/form";
+@use "sections/banner";
+@use "sections/form";
 
 :root {
   --primary: #ff6a3e;

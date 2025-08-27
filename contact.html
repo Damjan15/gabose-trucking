@@ -34,31 +34,12 @@
 
                 <div class="nav-wrapper">
                     <ul id="expanded" class="nav-list" aria-expanded="false">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active">
-                                Home
-                            </a>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="application.html" class="nav-link">Driver Application</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                About Us
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Services
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Driver Application
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Contact
-                            </a>
-                        </li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -79,14 +60,87 @@
         </div>
         <!--Background Image-->
         <picture class="banner-background">
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Banners/library-m.jpg">
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Banners/library.jpg">
-            <img aria-hidden="true" loading="lazy" decoding="async"
-                src="https://csimg.nyc3.digitaloceanspaces.com/Banners/library.jpg" alt="library" width="1920"
-                height="375">
+            <img aria-hidden="true" loading="lazy" decoding="async" src="assets/images/banner-contact.jpg" alt="banner"
+                width="1920" height="375">
         </picture>
     </div>
 
+    <!-- ============================================ -->
+    <!--                   Form                       -->
+    <!-- ============================================ -->
+    <section id="form-section">
+        <div class="container">
+            <div class="content">
+                <span class="cs-topper">Application Form</span>
+                <h2 class="cs-title">Apply to Work with Us</h2>
+                <p class="cs-text">Complete the form below to apply for a driving position with Gabose Trucking LLC.</p>
+            </div>
+
+            <!--Form-->
+            <form class="form" id="contact-form" name="Contact Form" method="post">
+
+                <!-- Basic Info -->
+                <label class="label cs-split">
+                    Full Name *
+                    <input class="input" required type="text" id="full-name" name="full_name">
+                </label>
+                <label class="label cs-split">
+                    Company (optional)
+                    <input class="input" type="text" id="company" name="company">
+                </label>
+                <label class="label cs-split">
+                    Email *
+                    <input class="input" required type="email" id="email" name="email">
+                </label>
+                <label class="label cs-split">
+                    Phone Number
+                    <input class="input" type="tel" id="phone" name="phone">
+                </label>
+
+                <!-- Reason for Contact -->
+                <label class="label">
+                    Subject / Reason for Contact *
+                    <select class="input select-input" required id="reason" name="reason">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="Request a Quote">Request a Quote</option>
+                        <option value="Driver Inquiry">Driver Inquiry</option>
+                        <option value="General Question">General Question</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+
+                <!-- Message -->
+                <label class="label">
+                    Message *
+                    <textarea class="input textarea" id="message" name="message"
+                        placeholder="Tell us more about your inquiry..." required></textarea>
+                </label>
+
+                <!-- Contact Preferences -->
+                <label class="label">
+                    Preferred Contact Method
+                    <select class="input select-input" id="contact-method" name="contact_method">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="Email">Email</option>
+                        <option value="Phone">Phone</option>
+                    </select>
+                </label>
+
+                <!-- Agreement -->
+                <label class="label">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    I agree to be contacted by Gabose Trucking LLC regarding my inquiry.
+                </label>
+
+                <!-- Submit -->
+                <div class="wrapper">
+                    <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+                </div>
+            </form>
+
+
+        </div>
+    </section>
 
 
     <!-- ============================================ -->

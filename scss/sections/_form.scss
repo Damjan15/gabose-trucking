@@ -1,10 +1,10 @@
 /*-- -------------------------- -->
-<---          Application       -->
+<---           Form             -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #application {
+  #form-section {
     padding: var(--sectionPadding);
     overflow: hidden;
     position: relative;
@@ -31,7 +31,7 @@
       max-width: none;
     }
 
-    .application-form {
+    .form {
       width: 100%;
       /* 464px - 846px */
       max-width: clamp(29rem, 59vw, 52.875rem);
@@ -141,7 +141,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #application {
+  #form-section {
     .cs-split {
       grid-column: span 6;
     }
