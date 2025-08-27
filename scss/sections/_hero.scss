@@ -25,8 +25,11 @@
 
     .content {
       text-align: center;
-      width: 100%;
       max-width: calc(750 / 16 * 1rem);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .cs-title {
@@ -41,53 +44,6 @@
 
     .cs-text {
       margin-bottom: calc(32 / 16 * 1rem);
-    }
-
-    .cs-button-group {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: calc(8 / 16 * 1rem);
-    }
-
-    .cs-button-solid {
-      font-size: calc(16 / 16 * 1rem);
-      font-weight: 700;
-      /* 46px - 56px */
-      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-      text-align: center;
-      text-decoration: none;
-      min-width: calc(200 / 16 * 1rem);
-      margin: 0;
-      /* prevents padding from adding to the width */
-      box-sizing: border-box;
-      padding: 0 calc(24 / 16 * 1rem);
-      background-color: var(--primary);
-      color: var(--bodyTextColorWhite);
-      border-radius: calc(4 / 16 * 1rem);
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-
-      &:before {
-        content: "";
-        width: 0%;
-        height: 100%;
-        background: #000;
-        opacity: 1;
-        border-radius: calc(4 / 16 * 1rem);
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: width 0.3s;
-      }
-
-      &:hover {
-        &:before {
-          width: 100%;
-        }
-      }
     }
 
     .graphic {

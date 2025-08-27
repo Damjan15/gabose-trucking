@@ -377,8 +377,11 @@
   }
   #hero .content {
     text-align: center;
-    width: 100%;
     max-width: 46.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   #hero .cs-title {
     /* 49px - 84px */
@@ -390,47 +393,6 @@
   }
   #hero .cs-text {
     margin-bottom: 2rem;
-  }
-  #hero .cs-button-group {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  #hero .cs-button-solid {
-    font-size: 1rem;
-    font-weight: 700;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-align: center;
-    text-decoration: none;
-    min-width: 12.5rem;
-    margin: 0;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    color: var(--bodyTextColorWhite);
-    border-radius: 0.25rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-  }
-  #hero .cs-button-solid:before {
-    content: "";
-    width: 0%;
-    height: 100%;
-    background: #000;
-    opacity: 1;
-    border-radius: 0.25rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #hero .cs-button-solid:hover:before {
-    width: 100%;
   }
   #hero .graphic {
     width: 100%;
@@ -630,7 +592,6 @@
   }
   #about .container {
     width: 100%;
-    /* changes to 1280px at desktop */
     max-width: 36.5rem;
     margin: auto;
     display: flex;
@@ -640,13 +601,11 @@
     gap: clamp(3rem, 4vw, 4rem);
   }
   #about .content {
-    /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
     max-width: 33.875rem;
     display: flex;
     flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
     position: relative;
     z-index: 10;
@@ -656,43 +615,6 @@
   }
   #about .cs-text:last-of-type {
     margin-bottom: 2rem;
-  }
-  #about .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    color: #1a1a1a;
-    min-width: 9.375rem;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    transition: color 0.3s;
-  }
-  #about .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #about .cs-button-solid:hover {
-    color: #fff;
-  }
-  #about .cs-button-solid:hover:before {
-    width: 100%;
   }
   #about .image-group {
     width: 100%;
@@ -747,15 +669,6 @@
   #about .picture {
     width: 93%;
     height: 94%;
-  }
-  #about .cs-box {
-    bottom: 0;
-  }
-  #about .cs-graphic {
-    max-width: 44.6875rem;
-    left: auto;
-    right: 8.125rem;
-    transform: translateY(-50%);
   }
 }
 /*-- -------------------------- -->
@@ -935,39 +848,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-  }
-  #cta .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    color: #fff;
-    min-width: 9.375rem;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-  }
-  #cta .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #cta .cs-button-solid:hover:before {
-    width: 100%;
   }
   #cta .background {
     width: 100%;
@@ -1431,6 +1311,40 @@ body {
   max-width: 40.625rem;
   margin: 0;
   color: var(--bodyTextColor);
+}
+
+.cs-button-solid {
+  font-size: 1rem;
+  font-weight: 700;
+  /* 46px - 56px */
+  line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+  text-align: center;
+  text-decoration: none;
+  min-width: 12.5rem;
+  margin: 0;
+  padding: 0 1.5rem;
+  background-color: var(--primary);
+  color: var(--bodyTextColorWhite);
+  border-radius: 0.25rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.cs-button-solid:before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #000;
+  opacity: 1;
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 0.3s;
+}
+.cs-button-solid:hover:before {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

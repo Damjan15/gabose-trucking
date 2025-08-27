@@ -70,3 +70,42 @@ body {
   margin: 0;
   color: var(--bodyTextColor);
 }
+
+.cs-button-solid {
+  font-size: calc(16 / 16 * 1rem);
+  font-weight: 700;
+  /* 46px - 56px */
+  line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+  text-align: center;
+  text-decoration: none;
+  min-width: calc(200 / 16 * 1rem);
+  margin: 0;
+
+  padding: 0 calc(24 / 16 * 1rem);
+  background-color: var(--primary);
+  color: var(--bodyTextColorWhite);
+  border-radius: calc(4 / 16 * 1rem);
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: calc(4 / 16 * 1rem);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+}
