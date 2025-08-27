@@ -5,10 +5,8 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #why-choose {
-    /* Centers Button */
     text-align: center;
     padding: var(--sectionPadding);
-    /* prevents the arrow from causing an overflow */
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -54,8 +52,6 @@
       display: inline-block;
       position: relative;
       z-index: 1;
-      /* prevents padding from adding to the width */
-      box-sizing: border-box;
 
       &:before {
         content: "";
@@ -96,8 +92,6 @@
       padding: clamp(1.25rem, 2.3vw, 2rem);
       background-color: #fef7f4;
       border-radius: calc(16 / 16 * 1rem);
-      /* prevents padding and border from affecting height and width */
-      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -108,9 +102,9 @@
     }
 
     .card-icon {
-      width: calc(48 / 16 * 1rem);
+      width: 3rem;
       height: auto;
-      margin: 0 0 calc(20 / 16 * 1rem) 0;
+      margin: 0 0 1.25rem 0;
       display: block;
     }
 

@@ -764,10 +764,8 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #why-choose {
-    /* Centers Button */
     text-align: center;
     padding: var(--sectionPadding);
-    /* prevents the arrow from causing an overflow */
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -810,8 +808,6 @@
     display: inline-block;
     position: relative;
     z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
   }
   #why-choose .cs-button-solid:before {
     content: "";
@@ -846,8 +842,6 @@
     padding: clamp(1.25rem, 2.3vw, 2rem);
     background-color: #fef7f4;
     border-radius: 1rem;
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1107,32 +1101,21 @@
   #footer .footer-social-link:hover {
     background-color: var(--primary);
   }
-  #footer .footer-social-link:hover .footer-social-icon {
-    filter: grayscale(1) brightness(1000%);
-    opacity: 1;
-  }
-  #footer .footer-social-icon {
-    width: 0.75rem;
-    height: auto;
-    display: block;
-    opacity: 0.6;
-    transition: opacity 0.3s;
-  }
-  #footer .cs-copyright {
+  #footer .copyright {
     font-size: 1rem;
     color: #bababa;
     line-height: 1.5em;
     margin: 0;
     display: block;
   }
-  #footer .cs-copyright-link,
+  #footer .copyright-link,
   #footer .cs-separater {
     font-size: 1rem;
     text-decoration: none;
     color: #bababa;
     transition: color 0.3s;
   }
-  #footer .cs-copyright-link:hover,
+  #footer .copyright-link:hover,
   #footer .cs-separater:hover {
     color: var(--primary);
   }
