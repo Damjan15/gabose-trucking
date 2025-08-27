@@ -34,31 +34,12 @@
 
                 <div class="nav-wrapper">
                     <ul id="expanded" class="nav-list" aria-expanded="false">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active">
-                                Home
-                            </a>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="application.html" class="nav-link active">Driver Application</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                About Us
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Services
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Driver Application
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Contact
-                            </a>
-                        </li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -79,82 +60,198 @@
         </div>
         <!--Background Image-->
         <picture class="banner-background">
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Banners/library-m.jpg">
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Banners/library.jpg">
-            <img aria-hidden="true" loading="lazy" decoding="async"
-                src="https://csimg.nyc3.digitaloceanspaces.com/Banners/library.jpg" alt="library" width="1920"
-                height="375">
+            <img aria-hidden="true" loading="lazy" decoding="async" src="assets/images/banner.jpg" alt="library">
         </picture>
     </div>
 
     <!-- ============================================ -->
-    <!--                   Contact                    -->
+    <!--               Application                    -->
     <!-- ============================================ -->
     <section id="application">
         <div class="container">
             <div class="content">
                 <span class="cs-topper">Application Form</span>
                 <h2 class="cs-title">Apply to Work with Us</h2>
-                <p class="cs-text">Orci eu lobortis elementum nibh tellus. Vulputate eu scelerisque felis imperdiet
-                    proin fermentum leo vel. Luctus accumsan tortor posuere ac ut consequat semper. Et pharetra pharetra
-                    massa massa ultricies mi quis.</p>
+                <p class="cs-text">Complete the form below to apply for a driving position with Gabose Trucking LLC.</p>
             </div>
             <!--Form-->
-            <form class="application-form" id="application-form" name="Contact Form" method="post">
-                <label class="label cs-split">
-                    First Name *
-                    <input class="input" required type="text" id="first-name-2061" name="First Name">
-                </label>
-                <label class="label cs-split">
-                    Last Name *
-                    <input class="input" required type="text" id="last-name-2061" name="Last Name">
-                </label>
-                <label class="label cs-split">
-                    Email *
-                    <input class="input" required type="email" id="email-2061" name="Email">
-                </label>
-                <label class="label cs-split">
-                    Phone Number *
-                    <input class="input" required type="tel" id="phone-2061" name="Phone Number">
-                </label>
-                <label class="label">
-                    Choose a position *
-                    <select class="input select-input" required id="position-2061" name="Position">
+            <form class="application-form" id="application-form" name="Driver Application" method="post">
+
+                <!-- Personal Info -->
+                <label class="label cs-split">First Name *<input class="input" required type="text" id="first-name"
+                        name="first_name"></label>
+                <label class="label cs-split">Last Name *<input class="input" required type="text" id="last-name"
+                        name="last_name"></label>
+                <label class="label cs-split">Email *<input class="input" required type="email" id="email"
+                        name="email"></label>
+                <label class="label cs-split">Phone Number *<input class="input" required type="tel" id="phone"
+                        name="phone"></label>
+                <label class="label">Date of Birth *<input class="input date-input" required type="date" id="dob"
+                        name="dob"></label>
+
+                <!-- Address -->
+                <label class="label">Street Address *<input class="input" required type="text" id="address-street"
+                        name="address_street"></label>
+                <label class="label cs-split">City *<input class="input" required type="text" id="address-city"
+                        name="address_city"></label>
+                <label class="label cs-split">State *<input class="input" required type="text" id="address-state"
+                        name="address_state"></label>
+                <label class="label cs-split">ZIP Code *<input class="input" required type="text" id="address-zip"
+                        name="address_zip"></label>
+
+                <!-- Position & Availability -->
+                <label class="label">Position Applied For *<select class="input select-input" required id="position"
+                        name="position">
                         <option value="" disabled selected>Please Choose</option>
-                        <option value="Server">Server</option>
-                        <option value="Chef">Chef</option>
-                        <option value="Manager">Manager</option>
+                        <option value="Company Driver">Company Driver</option>
+                        <option value="Owner Operator">Owner-Operator</option>
+                        <option value="Team Driver">Team Driver</option>
+                        <option value="Local Driver">Local Driver</option>
+                        <option value="Regional Driver">Regional Driver</option>
+                        <option value="OTR Driver">OTR Driver</option>
                         <option value="Other">Other</option>
-                    </select>
-                </label>
-                <label class="label">
-                    When can you start? *
-                    <input class="input date-input" required type="date" id="start-date-2061" name="Start Date">
-                </label>
-                <label class="label">
-                    What is your availability for an interview?
-                    <input class="input" type="text" id="interview-availability-2061" name="Interview Availability">
-                </label>
-                <label class="label cs-split">
-                    Expected pay range
-                    <input class="input" type="text" id="pay-range-2061" name="Pay Range">
-                </label>
-                <label class="label cs-split">
-                    Years experience
-                    <input class="input" type="text" id="years-experience-2061" name="Years Experience">
-                </label>
-                <label class="label">
-                    Tell us about any experience you have in your position
-                    <textarea class="input textarea" id="previous-experience-2061" name="Previous Experience"
-                        placeholder="Tell us about your previous experience..."></textarea>
-                </label>
-                <div class="wrapper">
-                    <button class="cs-button-solid cs-submit" type="submit">Submit</button>
+                    </select></label>
+                <label class="label">Available Start Date *<input class="input date-input" required type="date"
+                        id="start-date" name="start_date"></label>
+                <label class="label">Interview Availability<input class="input" type="text" id="interview-availability"
+                        name="interview_availability"></label>
+                <label class="label cs-split">Expected Pay Range<input class="input" type="text" id="pay-range"
+                        name="pay_range"></label>
+
+                <!-- CDL & Qualifications -->
+                <label class="label cs-split">Do you have a valid CDL? *<select class="input select-input" required
+                        id="cdl-valid" name="cdl_valid">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select></label>
+                <label class="label cs-split">CDL Class<select class="input select-input" id="cdl-class"
+                        name="cdl_class">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="Other">Other</option>
+                    </select></label>
+                <label class="label cs-split">CDL State of Issue<input class="input" type="text" id="cdl-state"
+                        name="cdl_state"></label>
+                <label class="label cs-split">CDL Number (optional)<input class="input" type="text" id="cdl-number"
+                        name="cdl_number"></label>
+
+                <!-- Endorsements -->
+                <div class="label">Endorsements (check all that apply)
+                    <div class="cs-split">
+                        <label><input type="checkbox" id="endorsement-hazmat" name="endorsements[]" value="Hazmat">
+                            Hazmat
+                            (H)</label>
+                        <label><input type="checkbox" id="endorsement-tanker" name="endorsements[]" value="Tanker">
+                            Tanker
+                            (N)</label>
+                        <label><input type="checkbox" id="endorsement-doubles" name="endorsements[]"
+                                value="Doubles/Triples">
+                            Doubles/Triples (T)</label>
+                        <label><input type="checkbox" id="endorsement-twic" name="endorsements[]" value="TWIC">
+                            TWIC</label>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <label class="label cs-split">Years of Commercial Driving Experience<input class="input" type="number"
+                        min="0" step="0.5" id="years-experience" name="years_experience"></label>
+                <label class="label cs-split">Primary Driving Type<select class="input select-input" id="driving-type"
+                        name="driving_type">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="OTR">OTR</option>
+                        <option value="Regional">Regional</option>
+                        <option value="Local">Local</option>
+                    </select></label>
+                <label class="label">Briefly describe your driving experience<textarea class="input textarea"
+                        id="previous-experience" name="previous_experience"></textarea></label>
+
+                <!-- Employment History -->
+                <label class="label">Most Recent Employer<input class="input" type="text" id="employer-name"
+                        name="employer_name"></label>
+                <label class="label cs-split">Employment Start Date<input class="input date-input" type="date"
+                        id="employer-start" name="employer_start"></label>
+                <label class="label cs-split">Employment End Date<input class="input date-input" type="date"
+                        id="employer-end" name="employer_end"></label>
+                <label class="label">Reason for Leaving<input class="input" type="text" id="reason-leaving"
+                        name="reason_leaving"></label>
+
+                <!-- Driving Record -->
+                <label class="label">Any accidents in the last 3 years?<select class="input select-input" id="accidents"
+                        name="accidents">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select></label>
+                <label class="label">If yes, please provide details<textarea class="input textarea"
+                        id="accident-details" name="accident_details"></textarea></label>
+
+                <label class="label">Any traffic violations in the last 3 years?<select class="input select-input"
+                        id="violations" name="violations">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select></label>
+                <label class="label">If yes, please provide details<textarea class="input textarea"
+                        id="violation-details" name="violation_details"></textarea></label>
+
+                <label class="label">Ever had your CDL suspended or revoked?<select class="input select-input"
+                        id="cdl-suspension" name="cdl_suspension">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select></label>
+                <label class="label">If yes, please provide details<textarea class="input textarea"
+                        id="suspension-details" name="suspension_details"></textarea></label>
+
+                <!-- Work Preferences -->
+                <label class="label cs-split">Preferred Driving Type<select class="input select-input"
+                        id="preferred-driving" name="preferred_driving">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="OTR">OTR</option>
+                        <option value="Regional">Regional</option>
+                        <option value="Local">Local</option>
+                    </select></label>
+                <label class="label cs-split">Willing to Travel Overnight?<select class="input select-input"
+                        id="overnight" name="overnight">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select></label>
+
+                <!-- Additional Info -->
+                <label class="label cs-split">Are you legally authorized to work in the U.S.? *<select
+                        class="input select-input" required id="authorized" name="authorized">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select></label>
+                <label class="label cs-split">Do you consent to a background check and drug screening? *<select
+                        class="input select-input" required id="consent" name="consent">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select></label>
+
+                <!-- Emergency Contact -->
+                <label class="label">Emergency Contact Name<input class="input" type="text" id="emergency-name"
+                        name="emergency_name"></label>
+                <label class="label cs-split">Emergency Contact Phone<input class="input" type="tel"
+                        id="emergency-phone" name="emergency_phone"></label>
+                <label class="label cs-split">Relationship<input class="input" type="text" id="emergency-relationship"
+                        name="emergency_relationship"></label>
+
+                <!-- Agreement -->
+                <label class="label"><input type="checkbox" id="agreement" name="agreement" required> I certify that all
+                    information provided is true and complete.</label>
+
+                <!-- Submit -->
+                <div class="wrapper"><button class="cs-button-solid cs-submit" type="submit">Submit Application</button>
                 </div>
             </form>
         </div>
     </section>
-
 
     <!-- ============================================ -->
     <!--                  Footer                      -->
@@ -168,64 +265,37 @@
                         height="40">
                 </a>
                 <ul class="footer-ul">
-                    <li class="footer-li">
-                        <a href="" class="footer-link">Home</a>
-                    </li>
-                    <li class="footer-li">
-                        <a href="" class="footer-link">About Us</a>
-                    </li>
-                    <li class="footer-li">
-                        <a href="" class="footer-link">Services</a>
-                    </li>
-                    <li class="footer-li">
-                        <a href="" class="footer-link">Driver Application</a>
-                    </li>
-                    <li class="footer-li">
-                        <a href="" class="footer-link">Contact</a>
-                    </li>
+                    <li class="footer-li"><a href="" class="footer-link">Home</a></li>
+                    <li class="footer-li"><a href="" class="footer-link">About Us</a></li>
+                    <li class="footer-li"><a href="" class="footer-link">Services</a></li>
+                    <li class="footer-li"><a href="" class="footer-link">Driver Application</a></li>
+                    <li class="footer-li"><a href="" class="footer-link">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-bottom">
-                <!--Social-->
                 <ul class="footer-social">
-                    <li class="footer-social-li">
-                        <a href="" class="footer-social-link" aria-label="facebook" target="_blank" rel="noopener">
-                            <img class="footer-social-icon cs-default"
+                    <li class="footer-social-li"><a href="" class="footer-social-link" aria-label="facebook"
+                            target="_blank" rel="noopener"><img class="footer-social-icon cs-default"
                                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg" alt="icon"
-                                loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                        </a>
-                    </li>
-                    <li class="footer-social-li">
-                        <a href="#" class="footer-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                            <img class="footer-social-icon cs-default"
+                                width="12" height="12"></a></li>
+                    <li class="footer-social-li"><a href="#" class="footer-social-link" aria-label="twitter"
+                            target="_blank" rel="noopener"><img class="footer-social-icon cs-default"
                                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg" alt="icon"
-                                loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                        </a>
-                    </li>
-                    <li class="footer-social-li">
-                        <a href="#" class="footer-social-link" aria-label="instagram" target="_blank" rel="noopener">
-                            <img class="footer-social-icon cs-default"
+                                width="12" height="12"></a></li>
+                    <li class="footer-social-li"><a href="#" class="footer-social-link" aria-label="instagram"
+                            target="_blank" rel="noopener"><img class="footer-social-icon cs-default"
                                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg" alt="icon"
-                                loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                        </a>
-                    </li>
-                    <li class="footer-social-li">
-                        <a href="#" class="footer-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                            <img class="footer-social-icon cs-default"
+                                width="12" height="12"></a></li>
+                    <li class="footer-social-li"><a href="#" class="footer-social-link" aria-label="youtube"
+                            target="_blank" rel="noopener"><img class="footer-social-icon cs-default"
                                 src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-ba.svg" alt="icon"
-                                loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                        </a>
-                    </li>
+                                width="12" height="12"></a></li>
                 </ul>
-                <span class="cs-copyright">
-                    © Copyright 2025 Gabose Trucking LLC. All rights reserved. - <a href=""
-                        class="cs-copyright-link">Freightline Digital</a>
-                </span>
+                <span class="cs-copyright">© Copyright 2025 Gabose Trucking LLC. All rights reserved.
+                    - <a href="" class="cs-copyright-link">Freightline Digital</a></span>
             </div>
         </div>
     </footer>
-
-
 
     <script src="js/script.js"></script>
 </body>
