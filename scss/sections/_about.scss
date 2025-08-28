@@ -31,9 +31,9 @@
     }
 
     .cs-text {
-      margin-bottom: (16 / 16) * 1rem;
+      margin-bottom: calc(16 / 16) * 1rem;
       &:last-of-type {
-        margin-bottom: (32 / 16) * 1rem;
+        margin-bottom: calc(32 / 16) * 1rem;
       }
     }
 
