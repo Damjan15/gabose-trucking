@@ -24,6 +24,9 @@
   --bodyFontSize: 1rem;
   /* 60px - 100px top and bottom */
   --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  /* Fonts */
+  --montserrat: "Montserrat", sans-serif;
+  --sans: "Open Sans", sans-serif;
 }
 
 html {
@@ -34,6 +37,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--sans);
 }
 
 *,
@@ -54,6 +58,7 @@ body {
 }
 
 .cs-title {
+  font-family: var(--montserrat);
   font-size: var(--headerFontSize);
   font-weight: 900;
   line-height: 1.2em;
